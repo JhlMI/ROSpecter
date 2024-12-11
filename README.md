@@ -18,7 +18,9 @@ iv. ID 3 -> turn 90 degrees left<br>
 v. ID 4 -> turn 180 degrees and Terminate<br>
 d. The layout of the markers on the circuit will be defined on the day of the<br>
 the review with the possibility of testing prior to the final evaluation.<br>
+<br>
 *********************************************************************************
+<br>
 STEPS TO FOLLOW:<br>
 <br>
 STEP1)<br>
