@@ -26,9 +26,9 @@ STEPS TO FOLLOW:<br>
 STEP1)<br>
 Execute the camera node<br>
 STEP2)<br>
-Execute <aruco_detector.py><br>
+Execute Aruci_detector.py to view aruco codes on the frame
 STEP3)<br>
-Execute <Aruco_control.py><br>
+Execute Aruco controlo to track the aruco ID
 STEP4)<br>
-upload <IMU_motors.ino> to ESP32<br>
+upload IMU_motores.iono to ESP32
 
