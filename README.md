@@ -30,5 +30,5 @@ Execute Aruci_detector.py to view aruco codes on the frame<br>
 STEP3)<br>
 Execute Aruco controlo to track the aruco ID<br>
 STEP4)<br>
-upload IMU_motores.iono to ESP32<br>
+upload IMU_motores.ino to ESP32<br>
 
