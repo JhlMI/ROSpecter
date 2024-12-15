@@ -24,7 +24,7 @@ class ArucoPID(Node):
 
         self.flag1 = False
 
-
+        self.finish = False
         self.inital = True
         self.on_move = False
         self.target_id = None
@@ -70,33 +70,39 @@ class ArucoPID(Node):
         aruco_X = float ( data[1].split(':')[1] )
         dis = float ( data[3].split(':')[1] )
       
-     
+
         if (aruco_id == -1):
             self.motor_angle(-1,0,0)
 
-        if (dis > 0.24):
+        if (dis > 0.24 and not(self.finish)):
             self.control_PID(aruco_X)
             
         elif (aruco_id != -1):
 
             self.motor_angle(-1,0,0)
             if aruco_id == 0:
-                angle= -1
+                angle= 270
            
             if aruco_id == 1:
            
                 angle= 90
             if aruco_id == 2:
         
-                angle= 270
+                angle= 180
 
             if aruco_id == 3:
-                angle = 0
+                angle = 270
+
+            if aruco_id == 4:
+                angle = 180
+                self.finish = True
+
             
             
             self.motor_angle(angle,0,0)
             #time.sleep(0.5)
-        
+        if self.finish:
+            self.get_logger().info("Finished")
 
 
         #self.get_logger().info(f"ID: {aruco_id}, X: {aruco_X}, Dis:{dis}")
